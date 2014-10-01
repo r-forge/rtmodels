@@ -1,0 +1,13 @@
+"difsim" <-
+function (N, nu, a, z = 0.5 * a, s = 0.1, Ter = 0, eta=0.0, sz=0.0, st=0.0, stepsize = 0.05/1000, 
+  v, var.v = eta^2, range.z = sz,  range.Ter = st) # for compatibility with previous version
+{
+    res = .C("difsim2", as.double(v), as.double(a), as.double(z),
+        as.double(s), as.double(var.v), as.double(range.z), as.double(Ter),
+        as.double(range.Ter), as.integer(N), err = integer(1),
+        as.double(stepsize), t.top = double(N), t.bot = double(N))
+    if (res$err != 0)
+        warning("An error occured.")
+    return(list(t.top = res$t.top[res$t.top > 0], t.bot = res$t.bot[res$t.bot >
+        0]))
+}

@@ -1,0 +1,80 @@
+<html><head><title>Utility functions for simulation of reaction times from Ratcliff's diffusion model and computing associated probabilities.</title>
+<link rel="stylesheet" type="text/css" href="Rchm.css">
+</head>
+<body>
+
+<table width="100%"><tr><td>RTmodels-package(RTmodels)</td><td align="right">R Documentation</td></tr></table><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="keyword" value="R:   RTmodels-package">
+<param name="keyword" value=" Utility functions for simulation of reaction times from Ratcliff's diffusion model and computing associated probabilities.">
+</object>
+
+
+<h2>Utility functions for simulation of reaction times from Ratcliff's diffusion model and computing associated probabilities.</h2>
+
+
+<h3>Description</h3>
+
+<p>
+A set of functions for simulating RTs from the diffusion model as proposed by Ratcliff,
+for calculating associated probabilities, and for estimating parameters.
+</p>
+
+
+<h3>Details</h3>
+
+<p>
+<table summary="Rd table">
+<tr>
+  <td align="left">Package: </td>  <td align="left"> difsim</td>
+</tr>
+<tr>
+  <td align="left"> Type: </td>  <td align="left"> Package</td>
+</tr>
+<tr>
+  <td align="left"> Version: </td>  <td align="left"> 1.0</td>
+</tr>
+<tr>
+  <td align="left"> Date: </td>  <td align="left"> 2006-05-19</td>
+</tr>
+<tr>
+  <td align="left"> License: </td>  <td align="left"> GPL v2 or higher </td>
+</tr>
+</table>
+<p>
+rt = difsim(v=.2,a=.2,z=.09,Ter=.250,N=1000);
+quantile(rt[[1]],seq(0.05,0.95,l=10))
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>
+Raoul Grasman
+Eric-Jan Wagenmakers
+</p>
+<p>
+Maintainer: Raoul Grasman &lt;rgrasman@uva.nl&gt;, Eric-Jan Wagenmakers &lt;e.j.m.wagenmakers@uva.nl&gt;
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Ratcliff &amp; Tuerlinckx (2002) Estimating parameters of the diffusion model: Approaches to dealing with contaminant reaction times and parameter variability. Psychonomic Bulletin &amp; Review, vol. 9 (3), p. 438&ndash;481.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+  rt = difsim(v=.2,a=.2,z=.09,Ter=.250,N=1000);
+  quantile(rt[[2]],seq(0.05,0.95,l=10))
+
+  prt.error(.Last.value-.250,v=.2,a=.2,z=.09) # assumes Ter=0
+</pre>
+
+
+
+<hr><div align="center">[Package <em>RTmodels</em> version 0.1 <a href="00Index.html">Index]</a></div>
+
+</body></html>

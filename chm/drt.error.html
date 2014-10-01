@@ -1,0 +1,113 @@
+<html><head><title>RT distribution of error responses</title>
+<link rel="stylesheet" type="text/css" href="Rchm.css">
+</head>
+<body>
+
+<table width="100%"><tr><td>drt.error(RTmodels)</td><td align="right">R Documentation</td></tr></table><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="keyword" value="R:   drt.error">
+<param name="keyword" value="R:   prt.error">
+<param name="keyword" value="R:   p.error">
+<param name="keyword" value=" RT distribution of error responses">
+</object>
+
+
+<h2>RT distribution of error responses</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Density and distribution functionof the reaction times of the error responses, and probability of an error, in Ratcliff's diffusion model for two alternative choice RT's.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+drt.error(t, v, a, z, s = 0.1, k = 1:100)
+prt.error(t, v, a, z, s = 0.1, k = 1:100)
+p.error(v, a, z = a/2, s2 = 0.1^2)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>t</code></td>
+<td>
+reaction time </td></tr>
+<tr valign="top"><td><code>v</code></td>
+<td>
+drift rate </td></tr>
+<tr valign="top"><td><code>a</code></td>
+<td>
+boundary separation </td></tr>
+<tr valign="top"><td><code>z</code></td>
+<td>
+starting point of the diffusion </td></tr>
+<tr valign="top"><td><code>s</code></td>
+<td>
+diffusion constant </td></tr>
+<tr valign="top"><td><code>s2</code></td>
+<td>
+square of diffusion constant </td></tr>
+<tr valign="top"><td><code>k</code></td>
+<td>
+terms evaluated in the infinite series (the more, the more accurate) </td></tr>
+</table>
+
+<h3>Details</h3>
+
+<p>
+This function is vectorized in <code>t</code>. For small values of <code>t</code> you need a large range for <code>k</code>.
+</p>
+
+
+<h3>Value</h3>
+
+<p>
+Density of the error responses.</p>
+
+<h3>Warning</h3>
+
+<p>
+Beta version
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>
+Raoul Grasman
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Ratcliff &amp; Tuerlinckx (2002) Estimating parameters of the diffusion model: Approaches to dealing with contaminant reaction times and parameter variability. Psychonomic Bulletin &amp; Review, 9(3), 438&ndash;481.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+##---- Should be DIRECTLY executable !! ----
+##-- ==&gt;  Define data, use random,
+##--    or do  help(data=index)  for the standard data sets.
+
+## The function is currently defined as
+function (t, v, a, z, s = 0.1, k = 1:100)
+{
+    defect = sapply(t, function(t) pi * s^2 * (exp(-v * z/s^2)/a^2) *
+        sum(k * sin(k * pi * z/a) * exp(-(v^2/s^2 + pi^2 * k^2 *
+            s^2/a^2) * t/2)))
+    defect/p.error(v = v, a = a, z = z, s2 = s^2)
+  }
+</pre>
+
+
+
+<hr><div align="center">[Package <em>RTmodels</em> version 0.1 <a href="00Index.html">Index]</a></div>
+
+</body></html>

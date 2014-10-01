@@ -1,0 +1,15 @@
+{
+    "contents" : "\\name{difsim.old}\n\\alias{difsim.old}\n%- Also NEED an '\\alias' for EACH other topic documented here.\n\\title{ Function to simulate diffusion processes model of Rattcliff for perceptual decisions }\n\\description{\n  Calling difsim results in the reaction times of both correct and incorrect responses of \\code{N} trials, as obtained from a diffusion process. All parameters of the diffusion process can be modified. The underlying process is given by the stochastic differential equation \\eqn{dx = v dt + \\sqrt{var.v} * dW(t)}. }\n\\usage{\ndifsim.old(v, a, N, z = 0.5 * a, s = 0.1, var.v = 0, range.z = 0, Ter = 0, range.Ter = 0, stepsize = 0.0)\n}\n%- maybe also 'usage' for other objects documented here.\n\\arguments{\n  \\item{v}{ Drift rate of the diffusion }\n  \\item{a}{ Upper decision boundary. Lower decision boundary is 0. }\n  \\item{N}{ The number of trials. }\n  \\item{z}{ Starting point of the difusion, defaults to the center of the lower and upper boundaries.~~ }\n  \\item{s}{ Variance of \\eqn{dW(t)} }\n  \\item{var.v}{ Variance of the driftrate. Defaults to zero. }\n  \\item{range.z}{ Radius of uniform distributed starting point around z. }\n  \\item{Ter}{ Fixed constant for motor respons. }\n  \\item{range.Ter}{ Radius of uniform distribution around Ter. }\n  \\item{stepsize}{ Size (msec) of the steps taken in the random walk. Default value is appropriate voor common parameter values. }\n}\n\\details{\n  For details on the meaning of the parameters, see the references.\n}\n\\value{\n  \\item{t.top }{reaction times in trials hitting the boundary \\code{a} (\"correct\" responses).}\n  \\item{t.bot }{reaction times in trials hitting the boundary \\code{0} (\"incorrect\" responses).}\n}\n\\references{ Ratcliff & Tuerlinckx, (2002), Estimating parameters of the diffusion model: Approaches to dealing with contaminant reaction times and parameter variability, \\emph{Psychonomic Bulletin & Review}, vol. 9 (3): 438-481 }\n\\author{\nRaoul Grasman\nEric-Jan Wagenmakers\n}\n\\section{Warning}{This function is obsolete.}\n\\examples{\n  rt = difsim(v=.2,a=.2,z=.09,Ter=.250,N=1000);\n  quantile(rt[[1]],seq(0.05,0.95,l=10))\n}\n\\keyword{ datagen }% at least one, from doc/KEYWORDS\n\\keyword{ distribution }\n\\keyword{ models }\n",
+    "created" : 1371637928283.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "201379004",
+    "id" : "B578ECAF",
+    "lastKnownWriteTime" : 1164303758,
+    "path" : "~/Dropbox/Documents/R/R package projects/non R-Forge packages/RTmodels package files/RTmodels/man/difsim.old.Rd",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_doc"
+}

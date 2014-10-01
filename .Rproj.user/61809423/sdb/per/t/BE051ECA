@@ -1,0 +1,15 @@
+{
+    "contents" : "Put C/C++/Fortran code here.\nIf you have compiled code, add a .First.lib() function\nin the 'R' subdirectory to load it;\nor if you use a NAMESPACE, an .OnLoad() function instead.\n\n",
+    "created" : 1371638316478.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2414869152",
+    "id" : "BE051ECA",
+    "lastKnownWriteTime" : 1355930443,
+    "path" : "~/Dropbox/Documents/R/R package projects/non R-Forge packages/RTmodels package files/RTmodels/src-x86_64/Read-and-delete-me",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "text"
+}

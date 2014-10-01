@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HEAD></HEAD><HTML><BODY>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Package RTmodels:  Contents">
+<param name="Local" value="00Index.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Package RTmodels:  R objects">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="CDFDif">
+<param name="Local" value="CDFDif.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="cdfdif">
+<param name="Local" value="CDFDif.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="difsim">
+<param name="Local" value="difsim.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="difsim.old">
+<param name="Local" value="difsim.old.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="drt.error">
+<param name="Local" value="drt.error.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="p.error">
+<param name="Local" value="drt.error.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="prt.error">
+<param name="Local" value="drt.error.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RTmodels-package">
+<param name="Local" value="RTmodels-package.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Package RTmodels:  Titles">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Compute simultaneous probability of (a) response time(s) and error under Ratcliff's diffusion model. ">
+<param name="Local" value="CDFDif.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Function to simulate diffusion processes model of Rattcliff for perceptual decisions ">
+<param name="Local" value="difsim.old.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RT distribution of error responses">
+<param name="Local" value="drt.error.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Utility functions for simulation of reaction times from Ratcliff's diffusion model and computing associated probabilities. ">
+<param name="Local" value="RTmodels-package.html">
+</OBJECT>
+</UL>
+</UL>
+</BODY></HTML>

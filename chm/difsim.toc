@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HEAD></HEAD><HTML><BODY>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Package difsim:  Contents">
+<param name="Local" value="00Index.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Package difsim:  R objects">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="difsim">
+<param name="Local" value="difsim.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="difsim-package">
+<param name="Local" value="difsim.package.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="drt.error">
+<param name="Local" value="drt.error.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="p.error">
+<param name="Local" value="drt.error.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="prt.error">
+<param name="Local" value="drt.error.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Package difsim:  Titles">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Function to simulate diffusion processes model of Rattcliff for perceptual decisions ">
+<param name="Local" value="difsim.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="RT distribution of error responses">
+<param name="Local" value="drt.error.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Utility functions for simulation of reaction times from Ratcliff's diffusion model. ">
+<param name="Local" value="difsim.package.html">
+</OBJECT>
+</UL>
+</UL>
+</BODY></HTML>

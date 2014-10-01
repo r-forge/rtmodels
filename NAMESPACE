@@ -1,0 +1,4 @@
+useDynLib(RTmodels)
+
+export(difsim, difsim.old, p.error, drt.error, prt.error, CDFDif,
+cdfdif)

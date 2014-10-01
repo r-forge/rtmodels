@@ -1,0 +1,15 @@
+{
+    "contents" : "Package: RTmodels\nVersion: 0.1\nDate: 2005-05-06\nTitle: Utility function for modeling and simulation of (sub-second) response times in cognitive psychology\nAuthor: Raoul Grasman, Eric-Jan Wagenmakers\nMaintainer: Raoul Grasman <rgrasman@uva.nl>\nDepends: R (>= 2.3.0)\nDescription: Simulate Ratcliff's diffusion model of perceptual decisions in speeded two-alternative forced choice tasks, compute probabilities, RT moments\nLicense: GPL (>= 2)\n",
+    "created" : 1371637768613.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1014595771",
+    "id" : "1FE3A011",
+    "lastKnownWriteTime" : 1371638233,
+    "path" : "~/Dropbox/Documents/R/R package projects/non R-Forge packages/RTmodels package files/RTmodels/DESCRIPTION",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "dcf"
+}
