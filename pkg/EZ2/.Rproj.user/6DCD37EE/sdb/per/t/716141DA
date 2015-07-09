@@ -1,0 +1,16 @@
+{
+    "contents" : "\\name{Data2EZ}\n\\alias{Data2EZ}\n%- Also NEED an '\\alias' for EACH other topic documented here.\n\\title{ Convert observed sample moments to diffusion parameter values }\n\\description{\n%  ~~ A concise (1-5 lines) description of what the function does. ~~\n  Converts proportion correct (Pc), response time variance (VRT), and response \n  time mean (MRT), to EZ diffusion model parameters.\n}\n\\usage{\nData2EZ(Pc, VRT, MRT, s = 0.1)\n}\n%- maybe also 'usage' for other objects documented here.\n\\arguments{\n  \\item{Pc}{ Proportion of correct responses.}\n  \\item{VRT}{ Variance of the response times in seconds.}\n  \\item{MRT}{ Mean of the response times in seconds.}\n  \\item{s}{ Scale parameter for the parameters (Ratcliff's convention is \\code{s = 0.1}, the default).}\n}\n\\details{\n  Use of MRT is optional; if MRT is absent \\code{Ter} will not be computed.\n}\n\\value{\n  A list with estimates\n  \\item{v }{Drift rate}\n  \\item{a }{Boundary separation}\n  \\item{Ter}{Non-decision time (is NA if MRT is absent)}\n}\n\\references{ \nGrasman, R.P.P.P., Wagenmakers, E.-J.& van der Maas, H.L.J. (2009). On the mean and variance of response times under the diffusion model with an application to parameter estimation. Journal of Mathematical Psychology, 53(2), 55-68. \n}\n\\author{ Raoul Grasman }\n%\\note{ ~~further notes~~ \n%\n% ~Make other sections like Warning with \\section{Warning }{....} ~\n%}\n\\seealso{ \\code{\\link{EZ2batch}} }\n\\examples{\n    Data2EZ(Pc=0.8022, VRT=0.112035, MRT=0.7231)\n}\n",
+    "created" : 1436348525830.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "596468469",
+    "id" : "716141DA",
+    "lastKnownWriteTime" : 1436348571,
+    "path" : "~/Dropbox/Documents/R/R package projects/R-Forged packages/EZ2/man/Data2EZ.Rd",
+    "project_path" : "man/Data2EZ.Rd",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_doc"
+}
