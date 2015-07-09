@@ -24,19 +24,12 @@ EZ2.pe(nu, z, a, s = 0.1)
     The return value has the attribute "gradient" attached: the gradient with respect to each of the parameters.
 }
 \references{ 
-    Ratcliff. Theory of Memory Retrieval. Psychological review (1978) vol. 85 (2) pp. 59-108 
-    
-    Grasman et al. EZ2: An extension of teh EZ-diffusion model for Response Time and Accuracy. Journal of Mathematical Psychology (2007) submitted
-     }
-\author{ Raoul Grasman }
-\note{ %~~further notes~~ 
+Ratcliff, R. (1978). Theory of Memory Retrieval. \emph{Psychological review} vol. 85 (2) pp. 59-108 
 
-% ~Make other sections like Warning with \section{Warning }{....} ~
+Grasman, R. P. P., Wagenmakers, E.-J., & van der Maas, H. L. J. (2007). On the mean and variance of response times under the diffusion model with an application to parameter estimation, \emph{J. Math. Psych.} 53: 55--68.
 }
+\author{ Raoul P. P. P. Grasman }
 \seealso{ \code{\link{EZ2-package}}, \code{\link{EZ2.cmrt}}, \code{\link{EZ2.cvrt}}, \code{\link{EZ2.mrt}}, \code{\link{EZ2.vrt}} }
 \examples{
     EZ2.pe(.1, .08, .12)
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ models }

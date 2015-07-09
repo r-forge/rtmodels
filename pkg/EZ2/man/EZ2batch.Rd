@@ -6,7 +6,8 @@
   Fit the a simplified diffusion model for response time and accuracy in batch to each row of a data frame.
 }
 \usage{
-EZ2batch(pstart, ObsValPair, ..., data, nrestart = 1, method = "Nelder-Mead", control = list(), hessian = FALSE)
+EZ2batch(pstart, ObsValPair, ..., data, nrestart = 1, method = "Nelder-Mead", 
+  control = list(), hessian = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -30,8 +31,12 @@ EZ2batch(pstart, ObsValPair, ..., data, nrestart = 1, method = "Nelder-Mead", co
 %  ~Describe the value returned
    Data frame with parameter estimates and convergence information.
 }
-\references{ Grasman, Wagenmakers, and van der Maas (2008) EZ2: An extention of the EZ-diffusion model for Response Time and Accuracy, \emph{Manuscript submitted for publication in J. Math. Psych.} }
-\author{ Raoul Grasman }
+\references{ 
+Ratcliff, R. (1978). Theory of Memory Retrieval. \emph{Psychological review} vol. 85 (2) pp. 59-108 
+
+Grasman, R. P. P., Wagenmakers, E.-J., & van der Maas, H. L. J. (2007). On the mean and variance of response times under the diffusion model with an application to parameter estimation, \emph{J. Math. Psych.} 53: 55--68.
+}
+\author{ Raoul P. P. P. Grasman }
 %\note{ ~~further notes~~ 
 %
 % ~Make other sections like Warning with \section{Warning }{....} ~
@@ -39,7 +44,7 @@ EZ2batch(pstart, ObsValPair, ..., data, nrestart = 1, method = "Nelder-Mead", co
 \seealso{ \code{\link{EZ2}} }
 \examples{
 ## create some data (theoretical values, not simulated)
-## create some data (theoretical values, not simulated) Needless to say, in reality you would like to fit real data!
+## Needless to say, in reality you would like to fit real data!
 A = seq(.08,.13,len=6)
 X2 = data.frame(A=A)
 X2$vrt0 = sapply(A, function(a) EZ2.vrt(.1,.05,a))
@@ -47,9 +52,10 @@ X2$pe0 = sapply(A, function(a) EZ2.pe(.1,.05,a))
 X2$vrt1 = sapply(A, function(a) EZ2.vrt(.2,a-.05,a))
 X2$pe1 = sapply(A, function(a) EZ2.pe(.2,a-.05,a))
 
-X2 = as.data.frame(X2)          # now pretend that X2 is the data frame that you may have computed from real data
+X2 = as.data.frame(X2)          # now pretend that X2 is the data frame that 
+                                # you may have computed from real data
 
-## fit an EZ2 model on each row
+## fit an EZ2 model to each row
 #  method 1:
 EZ2batch(c(v0=.11,v1=.21,z=.05,a=.09), 
  vrt0 ~ EZ2.vrt(v0,z,a), 

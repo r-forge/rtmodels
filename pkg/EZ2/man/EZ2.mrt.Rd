@@ -2,9 +2,9 @@
 \alias{EZ2.mrt}
 \alias{EZ2.vrt}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ compute mean exit/decision time irrespective of exit point/chosen alternative }
+\title{ Compute mean exit/decision time irrespective of exit point/chosen alternative }
 \description{
-  Given a boundary separation, a starting point, and a drift rate, this function computes the mean exit time/exit time variance of a one dimensional diffusion process under constant drift on an interval with absorbing boundaries. Used as a model of information accumulation, it is gives the mean decision time/decision time variance of responses in a speeded two-alternative forced choice (2AFC) response time task, regardless of whether the response is correct or incorrect.
+Given a boundary separation, a starting point, and a drift rate, this function computes the mean exit time/exit time variance of a one dimensional diffusion process under constant drift on an interval with absorbing boundaries. Used as a model of information accumulation, it is gives the mean decision time/decision time variance of responses in a speeded two-alternative forced choice (2AFC) response time task, regardless of whether the response is correct or incorrect.
 }
 \usage{
   EZ2.mrt(nu, z, a, s = 0.1, Ter)
@@ -28,15 +28,11 @@
     The return value has the attribute "gradient" attached: the gradient with respect to each of the parameters.
 }
 \references{ 
-    Ratcliff. Theory of Memory Retrieval. Psychological review (1978) vol. 85 (2) pp. 59-108 
-    
-    Grasman et al. EZ2: An extension of teh EZ-diffusion model for Response Time and Accuracy. Journal of Mathematical Psychology (2007) submitted
-     }
-\author{ Raoul Grasman }
-\note{ %~~further notes~~ 
+Ratcliff, R. (1978). Theory of Memory Retrieval. \emph{Psychological review} vol. 85 (2) pp. 59-108 
 
-% ~Make other sections like Warning with \section{Warning }{....} ~
+Grasman, R. P. P., Wagenmakers, E.-J., & van der Maas, H. L. J. (2007). On the mean and variance of response times under the diffusion model with an application to parameter estimation, \emph{J. Math. Psych.} 53: 55--68.
 }
+\author{ Raoul P. P. P. Grasman }
 \seealso{ \code{\link{EZ2-package}}, \code{\link{EZ2.cmrt}}, \code{\link{EZ2.cvrt}} }
 \examples{
     EZ2.mrt( 0.1, 0.08, 0.12, Ter=0.25)
@@ -44,4 +40,4 @@
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ models }
+%\keyword{ models }

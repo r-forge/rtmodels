@@ -1,9 +1,8 @@
 Package: EZ2
 Type: Package
-Title: EZ2 diffusion modeling of Response Times and Accuracy 
-Version: 1.0
-Date: 2007-08-31
+Title: Modeling Human Response Times and Accuracy using the EZ/EZ2 Diffusion Model
+Version: 1.2.0
 Author: Raoul Grasman
 Maintainer: Raoul Grasman <rgrasman@uva.nl>
-Description: EZ2 fits a simplified version of the diffusion model for human and monkey response times and accuracy to the means and variances of the observables. 
-License: GPL (>= 2)
+Description: Fitting simplified versions of Ratcliff's (1978) diffusion model (the EZ and EZ2 models) for human and monkey response times and accuracy to the means and variances of the observables. 
+License: GPL-2
